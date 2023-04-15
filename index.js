@@ -1,7 +1,7 @@
-const fetchData = require("../fetchData.js");
-const createDataStructure = require("../createDataStructure.js");
-const findHighestCartValue = require("../findHighestCartValue.js");
-const findFurthestUsers = require("../findFurthestUsers.js");
+const fetchData = require("./fetchData.js");
+const createDataStructure = require("./createDataStructure.js");
+const findHighestCartValue = require("./findHighestCartValue.js");
+const findFurthestUsers = require("./findFurthestUsers.js");
 
 async function main() {
   const users = await fetchData("https://fakestoreapi.com/users");
