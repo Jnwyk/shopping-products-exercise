@@ -10,6 +10,7 @@ module.exports = createDataStructure = (products) => {
       findCategory(categories, product).price += product.price;
     }
   });
+  return categories;
 };
 
 const findCategory = (categories, product) => {
