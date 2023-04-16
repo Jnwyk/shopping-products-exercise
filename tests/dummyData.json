@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "address": {
+        "geolocation": { "lat": "45.2778", "long": "2.5686"}
+      },
+      "name":{
+        "firstname":"john",
+        "lastname":"smith"
+     }
+    },
+    {
+      "id": 2,
+      "address": {
+        "geolocation": { "lat": "51.6754", "long": "18.1140"}
+      },
+      "name":{
+        "firstname":"jan",
+        "lastname":"nowak"
+     }
+    },
+    {
+      "id": 3,
+      "address": {
+        "geolocation": { "lat": "-36.3925", "long": "-60.1313"}
+      },
+      "name":{
+        "firstname":"juan",
+        "lastname":"perez"
+     }
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [{
+        "productId": 1, "quantity": 1
+      },
+      {
+        "productId": 2, "quantity": 1
+      }
+    ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "products": [{
+        "productId": 3, "quantity": 1
+      },
+      {
+        "productId": 4, "quantity": 1
+      }
+    ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "category1",
+      "price": 1
+    },
+    {
+      "id": 2,
+      "category": "category2",
+      "price": 1000
+    },
+    {
+      "id": 3,
+      "category": "category1",
+      "price": 4.54
+    },
+    {
+      "id": 4,
+      "category": "category2",
+      "price": 12.4
+    },
+    {
+      "id": 5,
+      "category": "category1",
+      "price": 3.5
+    }
+  ]
+}
