@@ -1,5 +1,6 @@
 module.exports = findFurthestUsers = (users) => {
   try {
+    if (!users) throw "Could not find any users";
     const futherestUsers = users.map((user) => {
       let maxDistance = { user: user, distance: 0 };
       users.forEach((currentUser) => {

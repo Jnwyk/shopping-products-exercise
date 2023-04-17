@@ -1,14 +1,18 @@
 module.exports = findHighestCartValue = (users, carts, products) => {
   try {
+    if (!carts) throw "Could not find any carts";
     let newCarts = carts.map((cart) => {
       let totalValue = countTotalValue(products, cart);
+      if (totalValue === 0)
+        throw "Could not count total value of cart, cart may be empty";
       const fullName = createFullName(users, cart);
+      if (!fullName) throw "Could not create full name of cart owner";
       return { ...cart, totalValue: totalValue, fullName: fullName };
     });
     const resultCart = findMaxCart(newCarts);
     return resultCart;
   } catch (err) {
-    console.log("ERROR: ", err);
+    console.log("error: ", err);
   }
 };
 
